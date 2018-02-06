@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<l7:Bundle xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:References>
+        <l7:Item>
+            <l7:Name>backend.postsapi.host</l7:Name>
+            <l7:Id>df1aa9042c5d82e8abce0468da73aad9</l7:Id>
+            <l7:Type>CLUSTER_PROPERTY</l7:Type>
+            <l7:TimeStamp>2018-01-21T17:41:35.331+08:00</l7:TimeStamp>
+            <l7:Resource>
+                <l7:ClusterProperty id="df1aa9042c5d82e8abce0468da73aad9" version="0">
+                    <l7:Name>backend.postsapi.host</l7:Name>
+                    <l7:Value>$#{template.cluster_property.backend.postsapi.host.Value}#</l7:Value>
+                </l7:ClusterProperty>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>backend.postsapi.path</l7:Name>
+            <l7:Id>df1aa9042c5d82e8abce0468da73aae5</l7:Id>
+            <l7:Type>CLUSTER_PROPERTY</l7:Type>
+            <l7:TimeStamp>2018-01-21T17:41:35.332+08:00</l7:TimeStamp>
+            <l7:Resource>
+                <l7:ClusterProperty id="df1aa9042c5d82e8abce0468da73aae5" version="1">
+                    <l7:Name>backend.postsapi.path</l7:Name>
+                    <l7:Value>$#{template.cluster_property.backend.postsapi.path.Value}#</l7:Value>
+                </l7:ClusterProperty>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>SSL</l7:Name>
+            <l7:Id>00000000000000000000000000000002:SSL</l7:Id>
+            <l7:Type>SSG_KEY_ENTRY</l7:Type>
+            <l7:TimeStamp>2018-01-21T17:41:35.603+08:00</l7:TimeStamp>
+            <l7:Resource>
+                <l7:PrivateKey alias="SSL" id="00000000000000000000000000000002:SSL" keystoreId="00000000000000000000000000000002" securityZoneId="df1aa9042c5d82e8abce0468da7291f0">
+                    <l7:CertificateChain>
+                        <l7:CertificateData>
+                            <l7:IssuerName>$#{template.ssg_key_entry.SSL.CertificateChain.CertificateData.IssuerName}#</l7:IssuerName>
+                            <l7:SerialNumber>$#{template.ssg_key_entry.SSL.CertificateChain.CertificateData.SerialNumber}#</l7:SerialNumber>
+                            <l7:SubjectName>$#{template.ssg_key_entry.SSL.CertificateChain.CertificateData.SubjectName}#</l7:SubjectName>
+                            <l7:Encoded>$#{template.ssg_key_entry.SSL.CertificateChain.CertificateData.Encoded}#</l7:Encoded>
+                        </l7:CertificateData>
+                    </l7:CertificateChain>
+                    <l7:Properties>
+                        <l7:Property key="keyAlgorithm">
+                            <l7:StringValue>$#{template.ssg_key_entry.SSL.Properties.keyAlgorithm.StringValue}#</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="keyData">
+                            <l7:StringValue algorithm="$#{template.ssg_key_entry.SSL.Properties.keyData.algorithm}#" bundleKey="$#{template.ssg_key_entry.SSL.Properties.keyData.bundleKey}#">$#{template.ssg_key_entry.SSL.Properties.keyData.StringValue}#</l7:StringValue>
+                        </l7:Property>
+                        <l7:Property key="specialPurposes">
+                            <l7:StringValue>$#{template.ssg_key_entry.SSL.Properties.specialPurposes.StringValue}#</l7:StringValue>
+                        </l7:Property>
+                    </l7:Properties>
+                </l7:PrivateKey>
+            </l7:Resource>
+        </l7:Item>
+        <l7:Item>
+            <l7:Name>GMU Template Demo</l7:Name>
+            <l7:Id>df1aa9042c5d82e8abce0468da73aa68</l7:Id>
+            <l7:Type>SERVICE</l7:Type>
+            <l7:TimeStamp>2018-01-21T17:41:35.604+08:00</l7:TimeStamp>
+            <l7:Resource>
+                <l7:Service id="df1aa9042c5d82e8abce0468da73aa68" version="2">
+                    <l7:ServiceDetail folderId="a359524a8369b8944d76791aa07621d8" id="df1aa9042c5d82e8abce0468da73aa68" version="2">
+                        <l7:Name>GMU Template Demo</l7:Name>
+                        <l7:Enabled>$#{template.service.GMU Template Demo.ServiceDetail.Enabled}#</l7:Enabled>
+                        <l7:ServiceMappings>
+                            <l7:HttpMapping>
+                                <l7:UrlPattern>$#{template.service.GMU Template Demo.ServiceDetail.ServiceMappings.HttpMapping.UrlPattern}#</l7:UrlPattern>
+                                <l7:Verbs>
+                                    <l7:Verb>$#{template.service.GMU Template Demo.ServiceDetail.ServiceMappings.HttpMapping.Verbs.1.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.GMU Template Demo.ServiceDetail.ServiceMappings.HttpMapping.Verbs.2.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.GMU Template Demo.ServiceDetail.ServiceMappings.HttpMapping.Verbs.3.Verb}#</l7:Verb>
+                                    <l7:Verb>$#{template.service.GMU Template Demo.ServiceDetail.ServiceMappings.HttpMapping.Verbs.4.Verb}#</l7:Verb>
+                                </l7:Verbs>
+                            </l7:HttpMapping>
+                        </l7:ServiceMappings>
+                        <l7:Properties>
+                            <l7:Property key="internal">
+                                <l7:BooleanValue>$#{template.service.GMU Template Demo.ServiceDetail.Properties.internal.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="policyRevision">
+                                <l7:LongValue>$#{template.service.GMU Template Demo.ServiceDetail.Properties.policyRevision.LongValue}#</l7:LongValue>
+                            </l7:Property>
+                            <l7:Property key="soap">
+                                <l7:BooleanValue>$#{template.service.GMU Template Demo.ServiceDetail.Properties.soap.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="tracingEnabled">
+                                <l7:BooleanValue>$#{template.service.GMU Template Demo.ServiceDetail.Properties.tracingEnabled.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                            <l7:Property key="wssProcessingEnabled">
+                                <l7:BooleanValue>$#{template.service.GMU Template Demo.ServiceDetail.Properties.wssProcessingEnabled.BooleanValue}#</l7:BooleanValue>
+                            </l7:Property>
+                        </l7:Properties>
+                    </l7:ServiceDetail>
+                    <l7:Resources>
+                        <l7:ResourceSet tag="policy">
+                            <l7:Resource type="policy" version="1">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy"&gt;
+    &lt;wsp:All wsp:Usage="Required"&gt;
+        &lt;L7p:AuditAssertion/&gt;
+        &lt;L7p:HttpRoutingAssertion&gt;
+            &lt;L7p:ProtectedServiceUrl stringValue="$#{template.service.GMU Template Demo.Resources.ResourceSet.xml.All.HttpRoutingAssertion.HttpRoutingAssertion.ProtectedServiceUrl.stringValue}#"/&gt;
+            &lt;L7p:RequestHeaderRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="$#{template.service.GMU Template Demo.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestHeaderRules.RequestHeaderRules.ForwardAll.booleanValue}#"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="$#{template.service.GMU Template Demo.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestHeaderRules.Rules.included.item.Name.stringValue}#"/&gt;
+                    &lt;/L7p:item&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="$#{template.service.GMU Template Demo.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestHeaderRules.Rules.included.item.Name.stringValue.1}#"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Rules&gt;
+            &lt;/L7p:RequestHeaderRules&gt;
+            &lt;L7p:RequestParamRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="$#{template.service.GMU Template Demo.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestParamRules.RequestParamRules.ForwardAll.booleanValue}#"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="$#{template.service.GMU Template Demo.Resources.ResourceSet.xml.All.HttpRoutingAssertion.RequestParamRules.RequestParamRules.Rules.httpPassthroughRules}#"/&gt;
+            &lt;/L7p:RequestParamRules&gt;
+            &lt;L7p:ResponseHeaderRules httpPassthroughRuleSet="included"&gt;
+                &lt;L7p:ForwardAll booleanValue="$#{template.service.GMU Template Demo.Resources.ResourceSet.xml.All.HttpRoutingAssertion.ResponseHeaderRules.ResponseHeaderRules.ForwardAll.booleanValue}#"/&gt;
+                &lt;L7p:Rules httpPassthroughRules="included"&gt;
+                    &lt;L7p:item httpPassthroughRule="included"&gt;
+                        &lt;L7p:Name stringValue="$#{template.service.GMU Template Demo.Resources.ResourceSet.xml.All.HttpRoutingAssertion.ResponseHeaderRules.Rules.item.item.Name.stringValue}#"/&gt;
+                    &lt;/L7p:item&gt;
+                &lt;/L7p:Rules&gt;
+            &lt;/L7p:ResponseHeaderRules&gt;
+            &lt;L7p:SamlAssertionVersion intValue="$#{template.service.GMU Template Demo.Resources.ResourceSet.xml.All.HttpRoutingAssertion.HttpRoutingAssertion.SamlAssertionVersion.intValue}#"/&gt;
+        &lt;/L7p:HttpRoutingAssertion&gt;
+    &lt;/wsp:All&gt;
+&lt;/wsp:Policy&gt;
+</l7:Resource>
+                        </l7:ResourceSet>
+                    </l7:Resources>
+                </l7:Service>
+            </l7:Resource>
+        </l7:Item>
+    </l7:References>
+    <l7:Mappings>
+        <l7:Mapping action="NewOrExisting" srcId="df1aa9042c5d82e8abce0468da73aad9" srcUri="https://gw1.ca.local:8543/restman/1.0/clusterProperties/df1aa9042c5d82e8abce0468da73aad9" type="CLUSTER_PROPERTY">
+            <l7:Properties>
+                <l7:Property key="MapBy">
+                    <l7:StringValue>name</l7:StringValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+        <l7:Mapping action="NewOrExisting" srcId="df1aa9042c5d82e8abce0468da73aae5" srcUri="https://gw1.ca.local:8543/restman/1.0/clusterProperties/df1aa9042c5d82e8abce0468da73aae5" type="CLUSTER_PROPERTY">
+            <l7:Properties>
+                <l7:Property key="MapBy">
+                    <l7:StringValue>name</l7:StringValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+        <l7:Mapping action="NewOrExisting" srcId="00000000000000000000000000000002:SSL" srcUri="https://gw1.ca.local:8543/restman/1.0/privateKeys/00000000000000000000000000000002:SSL" type="SSG_KEY_ENTRY"/>
+        <l7:Mapping action="NewOrExisting" srcId="a359524a8369b8944d76791aa07621d8" srcUri="https://gw1.ca.local:8543/restman/1.0/folders/a359524a8369b8944d76791aa07621d8" type="FOLDER">
+            <l7:Properties>
+                <l7:Property key="FailOnNew">
+                    <l7:BooleanValue>true</l7:BooleanValue>
+                </l7:Property>
+            </l7:Properties>
+        </l7:Mapping>
+        <l7:Mapping action="NewOrExisting" srcId="df1aa9042c5d82e8abce0468da73aa68" srcUri="https://gw1.ca.local:8543/restman/1.0/services/df1aa9042c5d82e8abce0468da73aa68" type="SERVICE"/>
+    </l7:Mappings>
+</l7:Bundle>
